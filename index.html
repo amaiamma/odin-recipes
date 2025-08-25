@@ -4,16 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin Recipes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata&display=swap">
 </head>
 <body>
-  <a href="./index.html">Home</a>
-  <hr>
+  <header>
+    <nav>
+      <a class="home" href="./index.html" title="Home">🫒 Odin Recipes</a>
+    </nav>
+    <hr>
+  </header>
+  
+  <div class="main">
+    <h1 class="title">Odin Recipes</h1>
+    <p class="subtitle">🙛 Delightful Levantine and Mediterranean dishes 🙙</p>
+  </div>
 
-  <h1>Odin Recipes</h1>
-  <ul>
-    <li><a href="recipes/halloumi-salad.html">Halloumi Salad</a></li>
-    <li><a href="recipes/hummus.html">Hummus</a></li>
-    <li><a href="recipes/knafeh.html">Knafeh</a></li>
-  </ul>
+  <div class="recipe-list">
+    <a href="recipes/halloumi-salad.html" title="Halloumi Salad">
+      <img src="img/halloumi-salad.jpg" width="300" height="300">
+      <p>Halloumi Salad</p>
+    </a>
+    <a href="recipes/hummus.html" title="Hummus">
+      <img src="img/hummus.jpg" alt="" width="300" height="300">
+      <p>Hummus</p>
+    </a>
+    <a href="recipes/knafeh.html" title="Knafeh">
+      <img src="img/knafeh.jpg" alt="" width="300" height="300">
+      <p>Knafeh</p>
+    </a>
+  </div>
 </body>
 </html>
