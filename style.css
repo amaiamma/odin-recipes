@@ -9,25 +9,41 @@
   padding: 0;
 }
 
+:root {
+  --font-family-text: "Prata", serif;
+  
+  --font-size-small: 1rem;
+  --font-size-normal: 1.125rem;
+  --font-size-large: 1.25rem;
+  --font-size-largest: 6rem;
+
+  --color-beige: #bdafa3;
+  --color-gray-light: #979797;
+  --color-gray-dark: #3c3c3c;
+  --color-green-dark: #55705c;
+  --color-green-light: #728577;
+}
+
 body {
-  font-family: "Prata", serif;
-  background: #bdafa3;
-  color: #3c3c3c;
+  font-family: var(--font-family-text);
+  background: var(--color-beige);
+  color: var(--color-black);
 }
 
 nav .home {
   display: inline-block;
   padding: 0.5em 1em 0.25em;
-  font-size: 1rem;
+  font-size: var(--font-size-small);
   font-weight: bold;
   text-decoration: none;
-  color: #3c3c3c;
+  color: var(--color-gray-dark);
 }
 
 hr {
   width: 98%;
   margin: 0 auto;
-  border: 1px solid #00000030;
+  border: 1px solid var(--color-gray-dark);
+  opacity: 0.3;
 }
 
 .main {
@@ -35,18 +51,18 @@ hr {
 }
 
 .main .title {
-  font-size: 6rem;
+  font-size: var(--font-size-largest);
   text-align: center;
-  text-shadow: 1px 1px 1px #7b8d80;
-  color: #55705c;
+  text-shadow: 1px 1px 1px var(--color-green-light);
+  color: var(--color-green-dark);
 }
 
 .main .subtitle {
   padding-top: 0.5em;
-  font-size: 1.25rem;
+  font-size: var(--font-size-large);
   text-align: center;
-  text-shadow: 1px 1px 1px #7b8d8050;
-  color: #3c3c3c;
+  text-shadow: 1px 1px 1px var(--color-gray-light);
+  color: var(--color-gray-dark);
 }
 
 .recipe-list {
@@ -61,5 +77,5 @@ hr {
 
 .recipe-list p {
   text-decoration: underline;
-  color: #3c3c3c;
+  color: var(--color-gray-dark);
 }
