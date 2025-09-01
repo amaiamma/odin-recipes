@@ -7,6 +7,11 @@
 * {
   margin: 0;
   padding: 0;
+  /* outline: 1px solid red; */
+}
+
+body *:hover {
+  outline: 1px solid blue;
 }
 
 :root {
@@ -15,7 +20,7 @@
   --font-size-small: 1rem;
   --font-size-normal: 1.125rem;
   --font-size-large: 1.25rem;
-  --font-size-largest: 6rem;
+  --font-size-largest: 4rem;
 
   --color-beige: #bdafa3;
   --color-gray-light: #979797;
@@ -25,14 +30,24 @@
 }
 
 body {
+  padding: 0.5vw;
+  font-size: var(--font-size-normal);
   font-family: var(--font-family-text);
   background: var(--color-beige);
   color: var(--color-black);
 }
 
+img {
+  max-width: 90vw;
+  max-height: 90vw;
+}
+
+header {
+  padding: 0.25vw 1vw;
+}
+
 nav .home {
   display: inline-block;
-  padding: 0.5em 1em 0.25em;
   font-size: var(--font-size-small);
   font-weight: bold;
   text-decoration: none;
@@ -40,24 +55,24 @@ nav .home {
 }
 
 hr {
-  width: 98%;
-  margin: 0 auto;
+  margin-top: 4px;
   border: 1px solid var(--color-gray-dark);
   opacity: 0.3;
 }
 
-.main {
-  padding: 1em 0 3em;
+.hero {
+  padding: 1em 0;
+  margin: 0 auto;
 }
 
-.main .title {
+.title {
   font-size: var(--font-size-largest);
   text-align: center;
   text-shadow: 1px 1px 1px var(--color-green-light);
   color: var(--color-green-dark);
 }
 
-.main .subtitle {
+.subtitle {
   padding-top: 0.5em;
   font-size: var(--font-size-large);
   text-align: center;
@@ -65,17 +80,19 @@ hr {
   color: var(--color-gray-dark);
 }
 
-.recipe-list {
+.recipes-list {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
 }
 
-.recipe-list a {
+.recipes-list a {
   display: inline-block;
 }
 
-.recipe-list p {
+.recipes-list p {
+  padding-bottom: 1em;
+  font-size: var(--font-size-small);
   text-decoration: underline;
   color: var(--color-gray-dark);
 }
