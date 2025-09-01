@@ -96,3 +96,46 @@ hr {
   text-decoration: underline;
   color: var(--color-gray-dark);
 }
+
+.recipe-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.recipe-about {
+  width: 72ch;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.recipe-about * {
+  margin: 0.75em 0;
+}
+
+.recipe-content {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 0.25em;
+}
+
+ul,
+ol {
+  width: 40ch;
+  max-width: 47.5vw;
+  border-top: 1px solid var(--color-gray-dark);
+  padding: 0.5em 2em;
+}
+
+li {
+  font-size: var(--font-size-small);
+}
+
+footer {
+  padding: 0.25vw 1vw;
+  text-align: center;
+}
